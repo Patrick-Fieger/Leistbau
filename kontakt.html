@@ -9,6 +9,9 @@
 <link rel="stylesheet" type="text/css" href="style/css/media-queries.css" media="all" />
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="style/type/fontello.css">
+<style type="text/css" media="screen">
+  #thankyou,#error_{display: none;}
+</style>
 <!--[if IE 8]>
 <link rel="stylesheet" type="text/css" href="style/css/ie8.css" media="all" />
 <![endif]-->
@@ -19,14 +22,6 @@
 <script src="style/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <script type="text/javascript" src="style/js/jquery.min.js"></script>
-<script type="text/javascript" src="style/js/ddsmoothmenu.js"></script>
-<script type="text/javascript" src="style/js/jquery.isotope.min.js"></script>
-<script type="text/javascript" src="style/js/twitter.min.js"></script>
-<script type="text/javascript" src="style/js/selectnav.js"></script>
-<script type="text/javascript" src="style/js/jquery.slickforms.js"></script>
-<script type="text/javascript" src="style/js/jquery.easytabs.min.js"></script>
-<script type="text/javascript" src="style/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="style/js/jquery.themepunch.revolution.min.js"></script>
 </head>
 <body class="full-layout">
 <!-- Begin Body Wrapper -->
@@ -42,6 +37,7 @@
           <ul>
             <li><a href="projekte.html">Projekte</a></li>
             <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
           </ul>
         </nav>
         <!-- End Menu -->
@@ -57,34 +53,39 @@
       <div class="page-intro clearfix">
         <h1 class="page-title">Nehmen Sie mit uns kontakt auf!</h1>
       </div>
-      <div class="map">
-        <!-- <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?source=embed&amp;hl=en-US&amp;ie=UTF8&amp;ll=41.525287,-87.450485&amp;spn=0.099472,0.263844&amp;t=m&amp;z=13&amp;output=embed"></iframe> -->
-
-        <iframe style="pointer-events:none" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2589.557669818217!2d8.639452171164717!3d49.53062594793402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccf44ef973891044!2sMichael+Leist+Bauunternehmen!5e0!3m2!1sde!2sde!4v1441815638634" width="100%" height="400" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
-      </div>
-      <br />
+      
       <!-- Begin Content -->
-      <section class="content">
+
+      <section class="content" id="thankyou">
+        <h2>Ihre Anfrage wurde versendet!</h2>
+        <p>Wir werden sie so schnell wie möglich kontaktieren.</p>
+      </section>
+
+      <section class="content" id="error_">
+        <h2>Es gab einen Fehler beim Senden der Anfrag!</h2>
+        <p>Bitte versuchen sie es später noch einmal.</p>
+      </section>
+
+      <section class="content" id="form">
         <h2>Sie haben fragen?</h2>
         <p>Rufen Sie uns an, oder benutzen sie das unten stehende Kontaktformular.</p>
         <!-- Begin Form -->
         <div class="form-container">
           <div class="response"></div>
-          <form class="forms" action="/contact/form-handler.php" method="post">
+          <form class="forms">
             <fieldset>
               <ol>
                 <li class="form-row text-input-row name-field">
-                  <input type="text" name="name" class="text-input defaultText required" placeholder="Name (Benötigt)"/>
+                  <input type="text" required name="name" class="text-input defaultText required" placeholder="Name (Benötigt)"/>
                 </li>
                 <li class="form-row text-input-row email-field">
-                  <input type="text" name="email" class="text-input defaultText required email" placeholder="Email (Benötigt)"/>
+                  <input type="text" required name="email" class="text-input defaultText required email" placeholder="Email (Benötigt)"/>
                 </li>
                 <li class="form-row text-input-row subject-field">
                   <input type="text" name="subject" class="text-input defaultText" placeholder="Betreff"/>
                 </li>
                 <li class="form-row text-area-row">
-                  <textarea name="message" class="text-area required" placeholder="Nachricht (Benötigt)"></textarea>
+                  <textarea required name="message" class="text-area required" placeholder="Nachricht (Benötigt)"></textarea>
                 </li>
                 <li class="form-row hidden-row">
                   <input type="hidden" name="hidden" value="" />
@@ -116,6 +117,14 @@
       <!-- End Sidebar -->
       
       <div class="clear"></div>
+      <br />
+      <div class="map">
+        <!-- <iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?source=embed&amp;hl=en-US&amp;ie=UTF8&amp;ll=41.525287,-87.450485&amp;spn=0.099472,0.263844&amp;t=m&amp;z=13&amp;output=embed"></iframe> -->
+
+        <iframe style="pointer-events:none" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2589.557669818217!2d8.639452171164717!3d49.53062594793402!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xccf44ef973891044!2sMichael+Leist+Bauunternehmen!5e0!3m2!1sde!2sde!4v1441815638634" width="100%" height="400" frameborder="0" style="border:0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+
+      </div>
+      
     </div>
   </div>
   <!-- End Wrapper --> 
@@ -125,7 +134,7 @@
   <div class="subfooter"> 
     <!-- Begin Inner -->
     <div class="inner">
-      <p>© 2015 Leistbau. Alle Rechte vorbehalten.</p>
+      <p>© 2015 Leistbau. Alle Rechte vorbehalten. | <a href="impressum.html" title="">Impressum</a></p>
       <div class="clear"></div>
     </div>
     <!-- Begin Inner --> 
@@ -136,26 +145,39 @@
 <!-- End Body Wrapper --> 
 <script>
 
-  $('.forms').dcSlickForms();
+  $('.forms').submit(function(event) {
+    event.preventDefault();
+    var err = 0;
+    $('input,textarea').each(function(index, el) {
+      var att = $(this).attr('name');
+      var names = ['name','email','message'];
 
-
-  $('.comment-form input[title], .comment-form textarea').each(function() {
-    if ($(this).val() === '') {
-      $(this).val($(this).attr('title'));
-    }
-    $(this).focus(function() {
-      if ($(this).val() == $(this).attr('title')) {
-        $(this).val('').addClass('focused');
+      if(names.indexOf(att) > -1 && $(this).val() == ""){
+        $(this).closest('li').addClass('error');
+        err++;
+      }else{
+        $(this).closest('li').removeClass('error');
       }
-    });
-    $(this).blur(function() {
-      if ($(this).val() === '') {
-        $(this).val($(this).attr('title')).removeClass('focused');
+
+    }).promise().done(function(){
+      if(err == 0){
+        $.ajax({
+          url: 'email.php',
+          type: 'POST',
+          data: $('.forms').serialize(),
+          success : function(data){
+            $('#form').hide();
+            if(data == "OK!"){
+              $('#thankyou').show();
+            }else{
+              $('#error_').show();
+            }
+          }
+        })
+        
       }
     });
   });
-
-
 </script>
 </body>
 </html>

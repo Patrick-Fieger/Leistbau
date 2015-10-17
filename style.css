@@ -201,13 +201,13 @@ h2.post-title a:hover {
     width: 40px;
     margin: 22px 0 17px;
 }
-.long-lined:after {
+/*.long-lined:after {
     content: '';
     display: block;
     border-bottom: 1px solid rgba(0,0,0,0.15);
     width: auto;
     margin: 15px 0;
-}
+}*/
 .aligncenter .lined:after,
 .aligncenter.lined:after {
     margin: 21px auto 15px
@@ -485,14 +485,14 @@ footer h5,
 footer h6 {
     color: #FFF
 }
-footer a,
+/*footer a,
 .subfooter a {
     color: #d1d1d1
 }
 footer a:hover,
 .subfooter a:hover {
     color: #0096d8
-}
+}*/
 .subfooter {
     width: 1120px;
     background: #f2e841;
@@ -997,7 +997,7 @@ footer .inner {
 .tp-bannertimer {
     width: 100%;
     height: 10px;
-    background: url(style/images/timer.png);
+    /*background: url(style/images/timer.png);*/
     position: absolute;
     z-index: 200;
 }
@@ -1012,7 +1012,15 @@ footer .inner {
 	.responsive .tparrows {
 	    display: none
 	}
+    
 }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+    .caption{
+        display: none;
+    }
+}
+
 .tp-simpleresponsive img {
     -moz-user-select: none;
     -khtml-user-select: none;
