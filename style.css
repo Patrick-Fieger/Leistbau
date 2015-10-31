@@ -2429,3 +2429,76 @@ ul.retina-icons li span {
     margin-top: 0;
     padding-top: 0;
 }
+
+
+
+.header_v{
+    width: 100%;
+    height: 550px;
+    position: relative;
+    background-image: url(style/images/bg/3.jpg);
+    background-size: cover;
+    padding: 50px 0 0 50px;
+}
+
+.header_v p{
+    background: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.header_v ul{
+    margin: 15px 0;
+}
+
+.header_v ul li{
+    background: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    opacity: 0;
+    margin: 3px 0 3px 0px;
+    padding: 5px;
+}
+
+.header_v a,
+.header_v p{
+    float: left;
+    clear: both;
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    -moz-transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+    margin-left:-30px;
+}
+
+.header_v ul{
+    float: left;
+    clear: both;
+}
+
+
+
+
+.header_v a.active,
+.header_v p.active{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 0;
+}
+
+.header_v li.active{
+    opacity: 1;
+}
+
+
+
+
+
+
