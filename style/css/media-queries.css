@@ -298,6 +298,19 @@
 @media only screen and (max-width: 479px) { 
 	.header_v{
 		height: 200px;
+		padding: 5px;
+	}
+
+	#menu li{
+		float: left;
+		width: 100%;
+		margin: 10px 0;
+	}
+
+	.header_v p,
+	.header_v ul,
+	.header_v a{
+		display: none;
 	}
 
 	.wrapper,
